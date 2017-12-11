@@ -1,0 +1,64 @@
+body {
+    font-family: Georgia, serif;
+    background: #ffffff url("../resources/bg_registration.jpg");
+    background-size: 100%;
+}
+
+.top-margin {
+    margin-top: 3%;
+}
+
+.width-full {
+    width: 100%;
+}
+
+.input-group-btn {
+    padding: 0 0;
+}
+
+.wrapper-card {
+    display: block;
+    /*margin: 3% 20%;*/
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 0 12px rgba(122, 122, 122, 1);
+    border-radius: 6px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.panel {
+    box-shadow: 0 0 12px rgba(122, 122, 122, 1);
+    border-radius: 6px;
+}
+
+.panel-heading {
+    border-color: transparent;
+    background-color: #D5CAAA;
+}
+
+#custom-nav {
+    -webkit-box-shadow: 0 8px 6px -6px rgba(122, 122, 122, 1);
+    -moz-box-shadow: 0 8px 6px -6px rgba(122, 122, 122, 1);
+    box-shadow: 0 0 12px rgba(122, 122, 122, 1);
+    border-radius: 0 0 6px 6px;
+}
+
+.navbar-default {
+    border-color: transparent;
+}
+
+.wrong-field::-webkit-input-placeholder {
+    color: #a94442;
+}
+
+.panel-title {
+    font-size: 1.3em;
+    line-height: 1.2;
+    color: #666;
+    text-align: justify;
+}
+
+.textarea {
+    resize: vertical; !important;
+}

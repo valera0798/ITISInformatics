@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+
+    <link href="/css/bootstrap/bootstrap.css" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="/css/web-app.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/registration_form.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row top-margin">
+        <div class="col-sm-8 col-sm-offset-2">
+            <div class="wrapper-card">
+                <form class="form-horizontal col-sm-12" role="form" name="form_login" onsubmit="return false;">
+                    <div id="div-email" class="form-group">
+                        <label for="email" class="col-sm-2 control-label">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="email" name="email"
+                                   class="form-control"
+                                   placeholder="Enter email here">
+                            <span id="error-email-invalid" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div id="div-password" class="form-group">
+                        <label for="password" class="col-sm-2 control-label">Password:</label>
+                        <div class="col-sm-10">
+                            <input id="password" type="password" name="password"
+                                   class="form-control"
+                                   placeholder="Enter password here">
+                        </div>
+                    </div>
+
+                    <div id="div-password-repetition" class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <input id="password-repetition" type="password" name="password-repetition"
+                                   class="form-control"
+                                   placeholder="Repeat your password">
+                            <span id="error-passwords-different" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div id="div-gender" class="form-group">
+                        <label for="gender" class="col-sm-2 control-label">Gender:</label>
+                        <div class="col-sm-10">
+                            <select id="gender" class="form-control" name="gender">
+                                <option name="male">Male</option>
+                                <option name="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="div-country" class="form-group">
+                        <label for="country" class="col-sm-2 control-label">Country:</label>
+                        <div class="col-sm-10">
+                            <select id="country" class="form-control input-group-lg" name="country">
+                                <option name="russia">Russia</option>
+                                <option name="england">England</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <span id="error-email-is-busy" class="text-danger"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <form onsubmit="return false;">
+                                <button id="btn-sign-up" type="submit" class="btn btn-primary" name="registration">
+                                    Sign up
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
